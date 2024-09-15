@@ -1,1 +1,283 @@
 # Event-promoting-landing-page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>India Event Promotion</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        header nav {
+            margin-top: 15px;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ff5722; /* Fallback color */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1600x900.png?text=Event+Background');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            padding: 15px 40px;
+            background-color: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #e65100;
+        }
+
+        /* Event Details */
+        .event-details {
+            padding: 70px;
+            text-align: center;
+            background-color: #fff3e0;
+        }
+
+        .event-details h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #f44336;
+        }
+
+        .event-details p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .highlights {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .highlight {
+            text-align: center;
+            width: 30%;
+        }
+
+        .highlight h3 {
+            font-size: 24px;
+            color: #ff5722;
+            margin-bottom: 10px;
+        }
+
+        .highlight p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Venue Details */
+        .venue-details {
+            background-color: #e8f5e9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .venue-details h2 {
+            font-size: 36px;
+            color: #388e3c;
+            margin-bottom: 20px;
+        }
+
+        .venue-details p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .venue-details .info {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Speakers Section */
+        .speakers {
+            background-color: #f1f8e9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .speakers h2 {
+            font-size: 36px;
+            color: #388e3c;
+            margin-bottom: 40px;
+        }
+
+        .speaker-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .speaker {
+            width: 30%;
+            text-align: center;
+        }
+
+        .speaker h4 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .speaker p {
+            color: #777;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 16px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Incredible India Event</div>
+        <nav>
+            <a href="#event-details">Event Details</a>
+            <a href="#venue">Venue</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Celebrate India 2024</h1>
+        <p>A unique blend of culture, innovation, and networking in the heart of India.</p>
+        <a href="#register" class="cta-btn">Register Now</a>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="event-details" class="event-details">
+        <h2>Event Highlights</h2>
+        <p>Discover the best of India's cultural performances, technological innovations, and culinary delights.</p>
+
+        <div class="highlights">
+            <div class="highlight">
+                <h3>Cultural Showcase</h3>
+                <p>Experience traditional and modern Indian cultural performances.</p>
+            </div>
+            <div class="highlight">
+                <h3>Innovation Talks</h3>
+                <p>Learn from top industry experts about the latest innovations in technology.</p>
+            </div>
+            <div class="highlight">
+                <h3>Culinary Delights</h3>
+                <p>Taste the rich and diverse flavors of India’s renowned cuisine.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Details Section -->
+    <section id="venue" class="venue-details">
+        <h2>Event Venue & Timings</h2>
+        <p class="info"><strong>Date:</strong> October 20-22, 2024</p>
+        <p class="info"><strong>Time:</strong> 10:00 AM - 6:00 PM</p>
+        <p class="info"><strong>Venue:</strong> Grand Convention Center, New Delhi</p>
+        <p class="info"><strong>Address:</strong> 123 Main Street, Connaught Place, New Delhi, 110001</p>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="speakers">
+        <h2>Featured Speakers</h2>
+        <div class="speaker-list">
+            <div class="speaker">
+                <h4>Ravi Kumar</h4>
+                <p>CEO, Tech Innovators</p>
+            </div>
+            <div class="speaker">
+                <h4>Anita Desai</h4>
+                <p>Entrepreneur, Cultural Ambassador</p>
+            </div>
+            <div class="speaker">
+                <h4>Vikram Singh</h4>
+                <p>Data Scientist, AI Expert</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Incredible India Event. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
